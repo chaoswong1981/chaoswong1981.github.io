@@ -1,7 +1,7 @@
 ---
 title: "开篇-Hugo基本使用"
 date: 2022-02-19T17:53:14+08:00
-draft: true
+draft: false
 ---
 
 >网上讲hugo怎么用的着实很多了，所以我只记录自己第一次折腾hugo的步骤。
@@ -47,7 +47,7 @@ draft: true
 
     按官方文档走的话，会注意到 md 开头有个 `traft: true`，这表示本篇文章是篇草稿，按hugo的逻辑，草稿是不会被部署上去的。
 
-    这个我没试，但是看生成的文件里是有的。
+    这个我试了下，如果没把traft改成false的话，最后部署到github上时是不会显示的。
 
 ## 0x2. github部署
 
@@ -88,4 +88,8 @@ draft: true
             github_token: ${{ secrets.GITHUB_TOKEN }}
             publish_dir: ./public
     ```
-    
+
+2. 上传
+    把所有的文件上传到github后，理论上应该就可以看到了。
+
+    懒得截图了（其实是还没看hugo怎么管理图片...）
