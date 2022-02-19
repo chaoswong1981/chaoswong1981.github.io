@@ -96,6 +96,6 @@ draft: false
     2. 点开Pages
     3. 在Source下，点击Branch，然后选择 gh-pages 即可
 
-    理论上做完以上步骤，再打开 https://<usrname>.github.io 应该就可以看到了。
+理论上做完以上步骤，再打开 https://<usrname>.github.io 应该就可以看到了。
     
-    懒得截图了（其实是还没看hugo怎么管理图片...）
+懒得截图了（其实是还没看hugo怎么管理图片...）
