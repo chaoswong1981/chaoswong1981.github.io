@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tony的笔记</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Tony的笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Feb 2022 17:53:14 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>开篇-Hugo基本使用</title>
+      <link>http://example.org/posts/%E5%BC%80%E7%AF%87-hugo%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sat, 19 Feb 2022 17:53:14 +0800</pubDate>
+      
+      <guid>http://example.org/posts/%E5%BC%80%E7%AF%87-hugo%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
+      <description> 网上讲hugo怎么用的着实很多了，所以我只记录自己第一次折腾hugo的步骤。
+ 0x0. 准备工作  在github上建一个跟自己用户名相同的仓库 把仓库clone到本地 cd到仓库里  0x1. hugo部分   创建hugo基本文件
+hugo new site . --force   换个主题
+ 本博客用的是paper，在这下载，看名字还是位国人哦，怪不得觉得这个主题比老外的要顺眼 直接下zip就行，然后解压出来，放到theme里的paper文件夹 修改根目录下的config.toml文件，在最后加上如下的部分： theme = &#39;paper&#39;     随便创建一篇草稿，再随便写点东西（比如本篇）
+hugo new posts/开篇-hugo基本使用.md   预览看看
+hugo server -D 在浏览器里打开提示的网址，我这儿是 http://localhost:1313 应该就能看到了。 此时可以随便改你的站点，保存后浏览器会自动刷新，很方便。
+  生成
+hugo -D 你就能在 public 文件夹里看到生成的页面了。
+这里要注意之前写的内容都属于“草稿”，按hugo的逻辑，草稿是不会被部署上去的。 这个我没试，
+  </description>
+    </item>
+    
+  </channel>
+</rss>
