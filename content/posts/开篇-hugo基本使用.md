@@ -89,7 +89,13 @@ draft: false
             publish_dir: ./public
     ```
 
-2. 上传
-    把所有的文件上传到github后，理论上应该就可以看到了。
+2. gh-pages配置
 
+    从hugo的官网上可以看到，用github actions生成的网站静态文件是会被推送到`gh-pages`的，所以要对仓库稍作配置。
+    1. 点开你的仓库的Settings页面
+    2. 点开Pages
+    3. 在Source下，点击Branch，然后选择 gh-pages 即可
+
+    理论上做完以上步骤，再打开 https://<usrname>.github.io 应该就可以看到了。
+    
     懒得截图了（其实是还没看hugo怎么管理图片...）
