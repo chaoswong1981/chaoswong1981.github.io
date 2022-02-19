@@ -55,7 +55,7 @@ hugo -D 然后你就能在 public 文件夹里看到生成的页面了。
   0x2. github部署 接着折腾，把这个博客搞到github托管上去。
   在根目录新建 ."><meta itemprop=datePublished content="2022-02-19T17:53:14+08:00">
 <meta itemprop=dateModified content="2022-02-19T17:53:14+08:00">
-<meta itemprop=wordCount content="131">
+<meta itemprop=wordCount content="140">
 <meta itemprop=keywords content>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="开篇-Hugo基本使用">
@@ -169,8 +169,14 @@ deploy:
         publish_dir: ./public
 </code></pre></li>
 <li>
-<p>上传
-把所有的文件上传到github后，理论上应该就可以看到了。</p>
+<p>gh-pages配置</p>
+<p>从hugo的官网上可以看到，用github actions生成的网站静态文件是会被推送到<code>gh-pages</code>的，所以要对仓库稍作配置。</p>
+<ol>
+<li>点开你的仓库的Settings页面</li>
+<li>点开Pages</li>
+<li>在Source下，点击Branch，然后选择 gh-pages 即可</li>
+</ol>
+<p>理论上做完以上步骤，再打开 https://.github.io 应该就可以看到了。</p>
 <p>懒得截图了（其实是还没看hugo怎么管理图片&mldr;）</p>
 </li>
 </ol>
