@@ -1,7 +1,7 @@
 ---
 title: "比较通用的创建python扩展的方法"
 date: 2022-02-27T20:37:51+08:00
-draft: true
+draft: false
 ---
 
 ## 1. 创建c文件
