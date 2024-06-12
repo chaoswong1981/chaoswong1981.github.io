@@ -16,3 +16,5 @@ draft: false
 分享一篇有观点和思考的技术文章。主要是为了建立你的影响力，能够输出价值观。
 
 这就是 ARTS 的全部动机。
+
+<p align="right">---- 陈皓于<a href="https://www.zhihu.com/question/301150832/answer/529809529">知乎上的回答</p>
