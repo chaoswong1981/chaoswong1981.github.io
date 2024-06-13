@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>开篇-Hugo基本使用 - Tony自留地</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Tony" /><meta name="description" content="网上讲hugo怎么用的着实很多了，所以我只记录自己第一次折腾hugo的步骤。 0x0. 准备工作 在github上建一个这样的仓库：.github.io" /><meta name="keywords" content="博客, ARTS" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.127.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/%E5%BC%80%E7%AF%87-hugo%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:url" content="http://localhost:1313/post/%E5%BC%80%E7%AF%87-hugo%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
+  <meta property="og:site_name" content="Tony自留地">
+  <meta property="og:title" content="开篇-Hugo基本使用">
+  <meta property="og:description" content="网上讲hugo怎么用的着实很多了，所以我只记录自己第一次折腾hugo的步骤。 0x0. 准备工作 在github上建一个这样的仓库：.github.io">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2022-02-19T17:53:14+08:00">
+    <meta property="article:modified_time" content="2022-02-19T17:53:14+08:00">
+
+  <meta itemprop="name" content="开篇-Hugo基本使用">
+  <meta itemprop="description" content="网上讲hugo怎么用的着实很多了，所以我只记录自己第一次折腾hugo的步骤。 0x0. 准备工作 在github上建一个这样的仓库：.github.io">
+  <meta itemprop="datePublished" content="2022-02-19T17:53:14+08:00">
+  <meta itemprop="dateModified" content="2022-02-19T17:53:14+08:00">
+  <meta itemprop="wordCount" content="809">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="开篇-Hugo基本使用">
+  <meta name="twitter:description" content="网上讲hugo怎么用的着实很多了，所以我只记录自己第一次折腾hugo的步骤。 0x0. 准备工作 在github上建一个这样的仓库：.github.io">
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Tony自留地</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Tony自留地</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">开篇-Hugo基本使用</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-02-19 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#0x0-准备工作">0x0. 准备工作</a></li>
+        <li><a href="#0x1-hugo部分">0x1. hugo部分</a></li>
+        <li><a href="#0x2-github部署">0x2. github部署</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <blockquote>
+<p>网上讲hugo怎么用的着实很多了，所以我只记录自己第一次折腾hugo的步骤。</p>
+</blockquote>
+<h2 id="0x0-准备工作">0x0. 准备工作</h2>
+<ol>
+<li>在github上建一个这样的仓库：<usrname>.github.io</li>
+<li>把仓库clone到本地</li>
+<li>cd到仓库里</li>
+</ol>
+<h2 id="0x1-hugo部分">0x1. hugo部分</h2>
+<ol>
+<li>
+<p>创建hugo基本文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new site . --force
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>换个主题</p>
+<ol>
+<li>本博客用的是paper，<a href="https://github.com/nanxiaobei/hugo-paper">在这下载</a>，看名字还是位国人哦，怪不得觉得这个主题比老外的要顺眼</li>
+<li>直接下zip就行，然后解压出来，放到theme里的paper文件夹</li>
+<li>修改根目录下的config.toml文件，在最后加上如下的部分：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">theme = &#39;paper&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+</li>
+<li>
+<p>随便创建一篇草稿，再随便写点东西（比如本篇）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new posts/开篇-hugo基本使用.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>预览看看</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在浏览器里打开提示的网址，我这儿是 http://localhost:1313 应该就能看到了。
+此时可以随便改你的站点，保存后浏览器会自动刷新，很方便。</p>
+</li>
+<li>
+<p>生成</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后你就能在 public 文件夹里看到生成的页面了。</p>
+<p>按官方文档走的话，会注意到 md 开头有个 <code>traft: true</code>，这表示本篇文章是篇草稿，按hugo的逻辑，草稿是不会被部署上去的。</p>
+<p>这个我试了下，如果没把traft改成false的话，最后部署到github上时是不会显示的。</p>
+</li>
+</ol>
+<h2 id="0x2-github部署">0x2. github部署</h2>
+<p>接着折腾，把这个博客搞到github托管上去。</p>
+<ol>
+<li>
+<p>在根目录新建 .github/workflows/gh-pages.yml 文件，然后把里面填上（就是hugo官网上的）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">name: github pages
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">on:
+</span></span><span class="line"><span class="cl">push:
+</span></span><span class="line"><span class="cl">    branches:
+</span></span><span class="line"><span class="cl">    - main  # Set a branch to deploy
+</span></span><span class="line"><span class="cl">pull_request:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">jobs:
+</span></span><span class="line"><span class="cl">deploy:
+</span></span><span class="line"><span class="cl">    runs-on: ubuntu-20.04
+</span></span><span class="line"><span class="cl">    steps:
+</span></span><span class="line"><span class="cl">    - uses: actions/checkout@v2
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">        submodules: true  # Fetch Hugo themes (true OR recursive)
+</span></span><span class="line"><span class="cl">        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    - name: Setup Hugo
+</span></span><span class="line"><span class="cl">        uses: peaceiris/actions-hugo@v2
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">        hugo-version: &#39;latest&#39;
+</span></span><span class="line"><span class="cl">        # extended: true
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    - name: Build
+</span></span><span class="line"><span class="cl">        run: hugo --minify
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    - name: Deploy
+</span></span><span class="line"><span class="cl">        uses: peaceiris/actions-gh-pages@v3
+</span></span><span class="line"><span class="cl">        if: github.ref == &#39;refs/heads/main&#39;
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">        github_token: ${{ secrets.GITHUB_TOKEN }}
+</span></span><span class="line"><span class="cl">        publish_dir: ./public
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>gh-pages配置</p>
+<p>从hugo的官网上可以看到，用github actions生成的网站静态文件是会被推送到<code>gh-pages</code>的，所以要对仓库稍作配置。</p>
+<ol>
+<li>点开你的仓库的Settings页面</li>
+<li>点开Pages</li>
+<li>在Source下，点击Branch，然后选择 gh-pages 即可</li>
+</ol>
+</li>
+</ol>
+<p>理论上做完以上步骤，再打开 https://<usrname>.github.io 应该就可以看到了。</p>
+<p>懒得截图了（其实是还没看hugo怎么管理图片&hellip;）</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Tony</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-02-19
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E6%AF%94%E8%BE%83%E9%80%9A%E7%94%A8%E7%9A%84%E5%88%9B%E5%BB%BApython%E6%89%A9%E5%B1%95%E7%9A%84%E6%96%B9%E6%B3%95/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">比较通用的创建python扩展的方法</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:chaoswong@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/chaoswong1981" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/3602481" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="#" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Tony</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
