@@ -6,7 +6,7 @@ draft: false
 
 # **Algorithm**
 
-[1768. 交替合并字符串](https://leetcode.cn/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
+[1768. 字符串的最大公因子](https://leetcode.cn/problems/greatest-common-divisor-of-strings/description/?envType=study-plan-v2&envId=leetcode-75)
 
 ### 思路：
 
