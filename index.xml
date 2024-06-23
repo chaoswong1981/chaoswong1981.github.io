@@ -13,7 +13,7 @@
       <link>https://chaoswong1981.github.io/post/arts02.%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</link>
       <pubDate>Sat, 22 Jun 2024 20:22:13 +0800</pubDate>
       <guid>https://chaoswong1981.github.io/post/arts02.%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</guid>
-      <description>Algorithm 1768. 交替合并字符串 思路： 我的思路其实是很“大白话”的解释： 同时遍历两个字符串 每个字符串都是从头开始取，作为因子 然后检查这个因子是否能够整除整</description>
+      <description>Algorithm 1768. 字符串的最大公因子 思路： 我的思路其实是很“大白话”的解释： 同时遍历两个字符串 每个字符串都是从头开始取，作为因子 然后检查这个因子是否能够整</description>
     </item>
     <item>
       <title>ARTS01.打卡第一天</title>
