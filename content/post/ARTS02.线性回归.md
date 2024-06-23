@@ -1,5 +1,5 @@
 ---
-title: "ARTS02.线性回归"
+title: "ARTS02.最大公约数"
 date: 2024-06-22T20:22:13+08:00
 draft: false
 ---
