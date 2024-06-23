@@ -6,8 +6,15 @@
     <description>Recent content on Tony自留地</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Jun 2024 14:23:23 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Jun 2024 20:22:13 +0800</lastBuildDate>
     <atom:link href="https://chaoswong1981.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARTS02.线性回归</title>
+      <link>https://chaoswong1981.github.io/post/arts02.%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</link>
+      <pubDate>Sat, 22 Jun 2024 20:22:13 +0800</pubDate>
+      <guid>https://chaoswong1981.github.io/post/arts02.%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</guid>
+      <description>Algorithm 1768. 交替合并字符串 思路： 我的思路其实是很“大白话”的解释： 同时遍历两个字符串 每个字符串都是从头开始取，作为因子 然后检查这个因子是否能够整除整</description>
+    </item>
     <item>
       <title>ARTS01.打卡第一天</title>
       <link>https://chaoswong1981.github.io/post/arts01.%E6%89%93%E5%8D%A1%E7%AC%AC%E4%B8%80%E5%A4%A9/</link>
