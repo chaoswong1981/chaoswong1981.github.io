@@ -43,7 +43,7 @@ qt.network.ssl: QSslSocket::connectToHostEncrypted: TLS initialization failed
 打印了一下replay->error()：
 ```shell
 QNetworkReply::UnknownNetworkError
-``
+```
 
 猜测可能是Qt不支持https的原因，网上找了段代码测试：
 ```c++
@@ -52,8 +52,10 @@ qDebug() << "Support SSL:  " << QSslSocket::supportsSsl()
             << "\nLib Version String: " << QSslSocket::sslLibraryVersionString()
             << "\nLib Build Version Number: " << QSslSocket::sslLibraryBuildVersionNumber()
             << "\nLib Build Version String: " << QSslSocket::sslLibraryBuildVersionString();
+```
 
 输出结果：
+```shell
 Support SSL:   false 
 Lib Version Number:  0 
 Lib Version String:  "" 
@@ -74,7 +76,7 @@ windows下最好还是不要去编译三方库，太折腾了，所以先去找�
 - https://www.firedaemon.com/get-openssl
 
 **注意：**  
-这里有个坑，你要**看清楚上面输出的结果里，当前Qt版本链接的是哪个版本的库**，比如这里我用的Qt5.12.6链接的是`OpenSSL 1.1.1b`（小版本号没关系），所以只能去找这个版本才能用。而上面第一个网址里提供的是3.x版本的库，装这个是没用的。
+这里有个坑，你要**看清楚上面输出的结果里，当前Qt版本链接的是哪个版本的库**，比如这里我用的Qt5.12.6链接的是`OpenSSL 1.1.1b`，所以只能去找这个版本才能用。而上面第一个网址里提供的是3.x版本的库，装这个是没用的。
 
 所以在第二个网址里找到[OpenSSL 1.1.1w](https://wiki.overbyte.eu/arch/openssl-1.1.1w-win64.zip)版本（小版本无所谓），下载下来。将其中的`libcrypto-1_1-x64.dll`和`libssl-1_1-x64.dll`拷贝到Qt的安装目录，比如我的是：`C:\Qt\Qt5.12.6\5.12.6\mingw73_64\bin\`下即可。
 
