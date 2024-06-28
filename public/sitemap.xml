@@ -3,14 +3,21 @@
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2024-06-27T14:32:19+08:00</lastmod>
+    <lastmod>2024-06-28T11:25:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-27T14:32:19+08:00</lastmod>
+    <lastmod>2024-06-28T11:25:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/%E7%94%A8go%E7%BB%99c&#43;&#43;%E5%86%99%E5%BA%93/</loc>
+    <lastmod>2024-06-28T11:25:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
